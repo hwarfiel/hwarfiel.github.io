@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hayden Warfield</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    {% block head %}
+    {% endblock %}
   </head>
 
-  <body>
+<body>
 
     <nav class="navbar">
-
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="/HW_logo.png" alt="HWLogo">
@@ -38,16 +39,13 @@
         </div>
     </nav>
 
-    <div>  
-        <h1 class="title is-size-1">Hayden Warfield</h1>
-        <p>Hi I'm Hayden a Professional Full-Stack Developer, Sports Broadcaster, and Siracha Enthusiast.</p>
-    </div>
+    {% block body %}
+    {% endblock %}
 
     <footer class="footer">
         <p><strong>Email:</strong>hwarfiel@iwu.edu</p>
         <p><strong>Phone:</strong>217-722-9846</p>
     </footer>
-
   </body>
 
 </html>
