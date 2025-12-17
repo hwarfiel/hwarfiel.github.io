@@ -1,4 +1,4 @@
-@import "/css/colors.css";
+@import url("/css/colors.css");
 
 @keyframes spin {
   from {
