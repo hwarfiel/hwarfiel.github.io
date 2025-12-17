@@ -1,105 +1,242 @@
 <!DOCTYPE html>
 <html data-theme="dark">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hayden Warfield</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="/css/stylesheet.css">
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hayden Warfield</title>
+        <link rel="stylesheet" href="./css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/png" href="./static/logo.png">
+    </head>
 
-<body>
-    <div class="continer is-hidden">
-        <div class="loadingScreen">
-            <h1>
-                <img src="/static/HW_logo.png" alt="HW logo">
-            </h1>
-        </div>
-    </div>
+    <body>
 
-    <nav class="navbar is-primary">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <img src="/HW_logo.png" alt="HWLogo">
-            </a>
-        </div>
-
-        <div class="navbar-start">
-            
-            <!--Programming Expierence-->
-            <div class="navbar-item">
-                Programming
-            </div>
-
-            <!--Fun Facts-->
-            <div class="navbar-item">
-                Web Design
-            </div>
-
-            <!--Broadcasting Expierence-->
-            <div class="navbar-item">
-                Broadcasting
-            </div>
-
-            <!--International Expiernce-->
-            <div class="navbar-item">
-                International Expierence
-            </div>
-
-        </div>
-    </nav>
-
-     <!-- Intro -->
-    <div>  
-        <h1 class="title is-size-1">Hayden Warfield</h1>
-        <p>Hi I'm Hayden a Professional Full-Stack Developer, NCAA Sports Broadcaster, and Siracha Enthusiast.</p>
-    </div>
-
-    <div class="tabs is-toggle is-toggle-rounded">
-        <ul>
-            <li class="is-active"><a>Programming</a></li>
-            <li><a>Web Design</a></li>
-            <li><a>Broadcasting</a></li>
-            <li><a>International Experience</a></li>
-        </ul>
-    </div>
-
-    <!--Programming-->
-    <div class="container">
-        <!-- Titan Study Tables-->
-        <div class="card">
-            <div class="card-content">
-                <h2 class="title is-size-2">Titan Study Tables</h2>
-                <p>Titan Study Tables is Python Flask Application Developed using the Agile Methodology and Git.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Web Design -->
-    <div class="container">
-
-        <!-- WoodLawn Chapel -->
-        <div class="card">
-            <div class="card-content">
-                <h2 class="title is-size-2">Woodlawn Chapel</h2>
-            </div>
+        <!--Custom Loading Animation -->
+        <div id="loader">
+            <img id="loader-image" src="./static/logo.png" alt="HW Logo">
         </div>
         
-        <!-- Consulting - Dakar Academy Website-->
-        <div class="card">
-            <div class="card-content">
-                <h2 class="title is-size-2">Dakar Academy Schools</h2>
+        <!--Actual Page-->
+        <div class="is-hidden" id="page">
+            <nav class="navbar" role="navigation">
+
+                <div class="navbar-brand">
+                    
+                    <img id="logo" src="./static/logo.png" alt="HW Logo">
+                   
+                </div>
+
+                <!--About Me-->
+                <div class="navbar-item">
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </span>
+                        <span>About Me</span>
+                    </a>
+                </div>
+
+                <!--Programming Expierence-->
+                <div class="navbar-item">
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <span>Programming</span>
+                    </a>
+                </div>
+
+                <!--Web Desgin-->
+                <div class="navbar-item">
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </span>
+                        <span>Web Design</span>
+                    </a>
+                </div>
+
+                <!--Broadcasting Expierence-->
+                <div class="navbar-item">
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa-solid fa-headset"></i>
+                        </span>
+                        <span>Broadcasting</span>
+                    </a>
+                </div>
+
+                <!--International Expiernce-->
+                <div class="navbar-item">
+                    <a>
+                        <span class="icon is-small">
+                            <i class="fa-solid fa-earth-europe"></i>
+                        </span>
+                        <span>International Experience</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Intro -->
+            <div class="is-flex my-5">
+
+                <img id="fullshot" src="./static/fullshot.JPG" alt="Picture of Hayden Warfield" >
+
+                <div id="fullshot-description">
+                    
+                    <div class="card" id="name-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <p class="title is-1">Hayden Warfield</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="FSD-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <p class="title is-1">Full-Stack Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="NB-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <p class="title is-1">NCAA Broadcaster</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="tabs is-large is-toggle is-toggle-rounded is-centered">
+                <ul>
+                    <li class="is-active" data-target="about-me">
+                        <a>
+                            <span class="icon is-small">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </span>
+                            <span>About Me</span>
+                        </a>
+                    </li>
+
+                    <li data-target="programming">
+                        <a>
+                            <span class="icon is-small">
+                                <i class="fa-solid fa-code"></i>
+                            </span>
+                            <span>Programming</span>
+                        </a>
+                    </li>
+
+                    <li data-target="web-design">
+                        <a>
+                            <span class="icon is-small">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </span>
+                            <span>Web Design</span>
+                        </a>
+                    </li>
+
+                    <li data-target="broadcasting">
+                        <a>
+                            <span class="icon is-small">
+                                <i class="fa-solid fa-headset"></i>
+                            </span>
+                            <span>Broadcasting</span>
+                        </a>
+                    </li>
+
+                    <li data-target="international-experience">
+                        <a>
+                            <span class="icon is-small">
+                                <i class="fa-solid fa-earth-europe"></i>
+                            </span>
+                            <span>International Experience</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tab-content">
+                <div id="about-me" class="container">
+                    <p>IN DEVELOPMENT...</p>
+                </div>
+
+                <div id="programming" class="container is-hidden">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-size-2">Titan Study Tables</h2>
+                            <p>
+                                Titan Study Tables is a Python Flask application developed
+                                using the Agile methodology and Git.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="web-design" class="container is-hidden">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-size-2">Woodlawn Chapel</h2>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-size-2">Dakar Academy Schools</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="broadcasting" class="container is-hidden">
+                    <p>IN DEVELOPMENT...</p>
+                </div>
+
+                <div id="international-experience" class="container is-hidden">
+                    <p>IN DEVELOPMENT...</p>
+                </div>
+            </div>
+            <!--Contact Form-->
+            <div id="contact-form" class="card is-centered my-5">
+                <div class="container">
+                    <div class="media-content mb-5">
+                        <p class="title is-2">Contact Me</p>
+                    </div>
+                    <form>
+                        <label for="name" class="title is-size-5">Name:</label>
+                        <input name="name" class="input mb-5" placeholder="e.g. Dwight Schrute"></input>
+
+                        <label for="email" class="title is-size-5">Email:</label>
+                        <input name="email" class="input mb-5" placeholder="e.g dwightschrute@dundermifflin.com" type="email"></input>
+
+                        <label for="message" class="title is-size-5">Message:</label>
+                        <textarea name="message" class="textarea mb-5" placeholder="e.g. Hello world"></textarea>
+
+                        <div class="is-flex">
+                            <button class="button is-primary" type="submit">Send Message</button>
+                            <button class="button is-danger ml-3" type="reset">Clear Form</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+            <footer class="footer has-text-centered">
+                <p><strong class="title is-size-4 mb-5">Email:</strong>hwarfiel@iwu.edu</p>
+                <p><strong class="title is-size-4 mt-5">Phone:</strong>217-722-9846</p>
+            </footer>
         </div>
 
-    </div>
+        <!--Import Scripts-->
+        <script src="./scripts/script.js"></script>
+    </body>
 
-    <footer class="footer is-danger">
-        <p><strong>Email:</strong>hwarfiel@iwu.edu</p>
-        <p><strong>Phone:</strong>217-722-9846</p>
-        <p><strong>Github:</strong><a href="url">Link text</a></p>
-    </footer>
-  </body>
+    
+    
 
 </html>
