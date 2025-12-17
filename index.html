@@ -1,22 +1,83 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html data-theme="dark">
 
-{% block body %}
-    <!-- Intro -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hayden Warfield</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+  </head>
+
+<body>
+    <div class="continer is-hidden">
+        <div class="loadingScreen">
+            <h1>
+                <img src="/static/HW_logo.png" alt="HW logo">
+            </h1>
+        </div>
+    </div>
+
+    <nav class="navbar is-primary">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/HW_logo.png" alt="HWLogo">
+            </a>
+        </div>
+
+        <div class="navbar-start">
+            
+            <!--Programming Expierence-->
+            <div class="navbar-item">
+                Programming
+            </div>
+
+            <!--Fun Facts-->
+            <div class="navbar-item">
+                Web Design
+            </div>
+
+            <!--Broadcasting Expierence-->
+            <div class="navbar-item">
+                Broadcasting
+            </div>
+
+            <!--International Expiernce-->
+            <div class="navbar-item">
+                International Expierence
+            </div>
+
+        </div>
+    </nav>
+
+     <!-- Intro -->
     <div>  
         <h1 class="title is-size-1">Hayden Warfield</h1>
         <p>Hi I'm Hayden a Professional Full-Stack Developer, NCAA Sports Broadcaster, and Siracha Enthusiast.</p>
     </div>
 
-    <!-- Project Cards -->
-    <div class="container">
+    <div class="tabs is-toggle is-toggle-rounded">
+        <ul>
+            <li class="is-active"><a>Programming</a></li>
+            <li><a>Web Design</a></li>
+            <li><a>Broadcasting</a></li>
+            <li><a>International Experience</a></li>
+        </ul>
+    </div>
 
+    <!--Programming-->
+    <div class="container">
         <!-- Titan Study Tables-->
         <div class="card">
             <div class="card-content">
                 <h2 class="title is-size-2">Titan Study Tables</h2>
-                <p>Titan Study Tables is Python Timesheet Application Developed for Illinois Wesleyan University Athletics Department. It uses a QRCODE embeded with a secret cdoe that generate that refreshes every 10 seconds</p>
+                <p>Titan Study Tables is Python Flask Application Developed using the Agile Methodology and Git.</p>
             </div>
         </div>
+    </div>
+
+    <!-- Web Design -->
+    <div class="container">
 
         <!-- WoodLawn Chapel -->
         <div class="card">
@@ -33,4 +94,12 @@
         </div>
 
     </div>
-{% endblock %}
+
+    <footer class="footer is-danger">
+        <p><strong>Email:</strong>hwarfiel@iwu.edu</p>
+        <p><strong>Phone:</strong>217-722-9846</p>
+        <p><strong>Github:</strong><a href="url">Link text</a></p>
+    </footer>
+  </body>
+
+</html>
