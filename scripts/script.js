@@ -1,9 +1,7 @@
 //Sets the Minimum time for the loader to appear in window
 const MIN_LOADER_TIME = 1500; 
-
 //Starts Loader Time
 const loaderStart = performance.now();
-
 //Handles Page Loader
 window.addEventListener("load", () => {
     
