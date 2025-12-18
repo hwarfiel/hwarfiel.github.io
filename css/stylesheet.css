@@ -13,7 +13,7 @@ html {
 #loader {
     position: fixed;
     inset: 0;
-    background-color:var(--dark-color); /* your dark background */
+    background: linear-gradient(to bottom right, var(--dark-color) 25%, var(--primary-color), var(--secondary-color)) !important; /* your dark background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,8 @@ html {
 
 #loader-image {
     position: fixed;
-    width: 30%;          /* control size here */
+    filter: brightness(0) invert(1);
+    width: 23%;          /* control size here */
     height: auto;
     animation: spin 1.2s linear infinite;
     transform-origin: 50% 50%;
@@ -39,21 +40,25 @@ html {
 }
 
 nav {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 3vh;
     min-height: 15vh !important;
     color: var(--text-color) !important;
     position: sticky !important;
+}
+
+#logo {
+    filter: brightness(0) invert(1);
 }
 
 span {
     color: var(--text-color);
 }
 
-.navbar {
-    background-color: var(--dark-color) !important;
-}
-
-.tabs > ul{
-    background-color: var(--dark-color) !important;
+li > a{
+    border-width: 1.5px !important;
+    border-color: var(--text-color) !important;
 }
 
 #fullshot{
@@ -64,21 +69,7 @@ span {
 }
 #fullshot-description{
     display: fixed;
-}
-
-#name-card {
-    max-height: 500px;
-    margin-left: 15px;
-}
-
-#FSD-card {
-    max-height: 500px;
-    margin-left: 115px;
-}
-
-#NB-card {
-    max-height: 500px;
-    margin-left: 215px;
+    max-width: 30vw;
 }
 
 #contact-form {

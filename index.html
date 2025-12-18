@@ -21,61 +21,44 @@
     <!--Actual Page-->
     <div class="is-hidden" id="page">
         <nav class="level" role="navigation">
-            <div class="navbar-brand"> 
-                <a href="javascript:window.location.reload();">
-                    <figure class="image is-128x128"> 
-                        <img id="logo" src="./static/logo.png" alt="HW Logo"> 
-                    </figure>
-                </a> 
-            </div> 
-
-            <!--About Me-->
-            <div class="navbar-item"> 
-                <a href="#about-me"> 
-                    <span class="icon is-small"> 
-                        <i class="fa-solid fa-circle-info"></i> 
-                    </span> 
-                    <span>About Me</span> 
-                </a> 
-            </div>
-
+           
             <!--Programming Expierence-->
-            <div class="navbar-item"> 
-                <a href="#programming">
-                    <span class="icon is-small">
-                        <i class="fa-solid fa-code"></i> 
-                    </span> <span>Programming</span> 
-                </a> 
-            </div> 
-
+            <a class="navbar-item" href="#programming">
+                <span class="icon is-small">
+                    <i class="fa-solid fa-code"></i> 
+                </span> <span>Programming</span> 
+            </a> 
+            
             <!--Web Desgin-->
-            <div class="navbar-item"> 
-                <a href="#web-design"> 
-                    <span class="icon is-small"> 
-                        <i class="fa-solid fa-diagram-project"></i> 
-                    </span> 
-                    <span>Web Design</span> 
-                </a> 
-            </div>
+            <a class="navbar-item" href="#web-design"> 
+                <span class="icon is-small"> 
+                    <i class="fa-solid fa-diagram-project"></i> 
+                </span> 
+                <span>Web Design</span> 
+            </a> 
+
+            <a id="logo" href="javascript:window.location.reload();">
+                <figure class="image is-128x128"> 
+                    <img id="logo" src="./static/logo.png" alt="HW Logo"> 
+                </figure>
+            </a> 
 
             <!--Broadcasting Expierence-->
-            <div class="navbar-item"> 
-                <a href="#broadcasting"> 
-                    <span class="icon is-small"> 
-                        <i class="fa-solid fa-headset"></i> 
-                    </span> <span>Broadcasting</span> 
-                </a> 
-            </div>
+            <a class="navbar-item" href="#broadcasting"> 
+                <span class="icon is-small"> 
+                    <i class="fa-solid fa-headset"></i> 
+                </span> <span>Broadcasting</span> 
+            </a> 
+          
 
             <!--International Expiernce-->
-            <div class="navbar-item"> 
-                <a href="#international-expiernce"> 
-                    <span class="icon is-small"> 
-                        <i class="fa-solid fa-earth-europe"></i> 
-                    </span> 
-                    <span>International Experience</span> 
-                </a>
-            </div>
+            <a class="navbar-item" href="#international-expiernce"> 
+                <span class="icon is-small"> 
+                    <i class="fa-solid fa-earth-europe"></i> 
+                </span> 
+                <span>International Experience</span> 
+            </a>
+
         </nav>
 
         <!-- Intro -->
@@ -87,43 +70,26 @@
 
                 <div class="card" id="name-card">
                     <div class="card-content">
+
                         <div class="media">
                             <p class="title is-1">Hayden Warfield</p>
                         </div>
+                        <p>
+                            Hi I'm Hayden, a Full-Stack Developer, NCAA Broadcaster,
+                            and self-proclaimed Happy Meal Critic. Wether it comes to
+                            problem solving, creative thinking, or public speaking I'm 
+                            the one you want leading the charge.
+                        </p>
                     </div>
                 </div>
 
-                <div class="card" id="FSD-card">
-                    <div class="card-content">
-                        <div class="media">
-                            <p class="title is-1">Full-Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" id="NB-card">
-                    <div class="card-content">
-                        <div class="media">
-                            <p class="title is-1">NCAA Broadcaster</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
 
         <div class="tabs is-large is-toggle is-toggle-rounded is-centered">
             <ul>
-                <li class="is-active" data-target="about-me">
-                    <a>
-                        <span class="icon is-small">
-                            <i class="fa-solid fa-circle-info"></i>
-                        </span>
-                        <span>About Me</span>
-                    </a>
-                </li>
-
-                <li data-target="programming">
+                <li class="is-active" data-target="programming">
                     <a>
                         <span class="icon is-small">
                             <i class="fa-solid fa-code"></i>
@@ -162,12 +128,8 @@
         </div>
 
         <div id="tab-content">
-            <div id="about-me" class="container">
-                <p>IN DEVELOPMENT...</p>
-            </div>
-
             <!--Programming Content -->
-            <div id="programming" class="container is-hidden">
+            <div id="programming" class="container">
                 <div class="card">
                     <div class="card-content">
                         <h2 class="title is-size-2">Titan Study Tables</h2>
@@ -184,7 +146,7 @@
                 <div class="card">
                     <div class="card-content">
                         <h2 class="title is-size-2">Woodlawn Chapel</h2>
-                        <a class="button" href="https://woodlawnchapel.org/">Visit Site</a>
+                        <a class="button" href="https://woodlawnchapel.org/" target="_blank">Visit Site</a>
                     </div>
                 </div>
 
@@ -192,7 +154,7 @@
                     <div class="card-content">
                         <h2 class="title is-size-2">Dakar Academy Schools</h2>
                         <p>Dakar Academy is an international boarding school based in Dakar, Senegal!</p>
-                        <a class="button" href="https://dakar-academy.org/">Visit Site</a>
+                        <a class="button" href="https://dakar-academy.org/" target="_blank">Visit Site</a>
                     </div>
                 </div>
             </div>
