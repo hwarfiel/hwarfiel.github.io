@@ -1,4 +1,14 @@
-@import url("/css/colors.css");
+:root {
+    --dark-color: #01161e;
+    --primary-color: #124559;
+    --secondary-color: #598392;
+    --green-color: #aec3b0;
+    --text-color: #eff6e0;
+}
+
+html {
+    background: linear-gradient(to bottom right, var(--dark-color) 25%, var(--primary-color), var(--secondary-color)) !important;
+}
 
 #loader {
     position: fixed;
@@ -28,12 +38,22 @@
     }
 }
 
-.navbar {
-    max-height: 20vh;
+nav {
+    min-height: 15vh !important;
+    color: var(--text-color) !important;
+    position: sticky !important;
 }
 
-#logo {
-    margin-left: 3  vw;
+span {
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--dark-color) !important;
+}
+
+.tabs > ul{
+    background-color: var(--dark-color) !important;
 }
 
 #fullshot{
