@@ -108,6 +108,3 @@ li > a{
     min-width: 100px;
 }
  
-figure:has(iframe) {
-  border-radius: 3%;
-}
