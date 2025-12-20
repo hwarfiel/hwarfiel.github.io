@@ -91,9 +91,9 @@ li > a{
     flex-shrink: 0;
 }
 
-.carousel:hover .carousel-track {
+/* .carousel:hover .carousel-track {
   animation-play-state: paused;
-}
+} */
 
 @keyframes scroll {
   from {
