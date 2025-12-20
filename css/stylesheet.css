@@ -85,15 +85,9 @@ li > a{
 }
 
 .carousel-track img {
-    /* width: 300px; 
-    height: 200px; */
-    object-fit: cover;
+    object-fit: contain;
     flex-shrink: 0;
 }
-
-/* .carousel:hover .carousel-track {
-  animation-play-state: paused;
-} */
 
 @keyframes scroll {
   from {
@@ -103,7 +97,6 @@ li > a{
     transform: translateX(-50%);
   }
 }
-
 
 #contact-form {
     display: flex;
