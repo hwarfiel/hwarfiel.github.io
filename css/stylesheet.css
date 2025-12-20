@@ -107,4 +107,7 @@ li > a{
     padding: 1.5%;
     min-width: 100px;
 }
-
+ 
+figure:has(iframe) {
+  border-radius: 3%;
+}
