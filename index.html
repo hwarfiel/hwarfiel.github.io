@@ -68,13 +68,13 @@
 
             <div id="fullshot-description">
 
-                <div class="card" id="name-card">
+                <div class="card p-5" id="name-card">
                     <div class="card-content">
 
                         <div class="media">
                             <p class="title is-1">Hayden Warfield</p>
                         </div>
-                        <p>
+                        <p class="is-size-5 has-text-weight-medium">
                             Hi I'm Hayden, a Full-Stack Developer, NCAA Broadcaster,
                             and self-proclaimed Happy Meal Critic. Wether it comes to
                             problem solving, creative thinking, or public speaking I'm 
@@ -131,6 +131,7 @@
             <!--Programming Content -->
             <div id="programming" class="container">
 
+                <h2 class="title is-size-2">Programming Skills:</h1>
                 <div class="carousel my-5">
                     <div class="carousel-track">
 
@@ -166,6 +167,11 @@
                             <img src="./static/language_logos/Racket.svg" alt="Racket Logo">
                         </figure>
 
+                        <figure class="image is-128x128 mx-5">
+                            <img id="rust-logo" src="./static/language_logos/Rust_logo.png" alt="Rust Logo">
+                        </figure>
+
+
                         <!-- duplicate images -->
                         <figure class="image is-128x128 mx-5">
                             <img src="./static/language_logos/CPlusPlus.svg" alt="C++ logo">
@@ -198,10 +204,17 @@
                         <figure class="image is-128x128 mx-5">
                             <img src="./static/language_logos/Racket.svg" alt="Racket Logo">
                         </figure>
+
+                        <figure class="image is-128x128 mx-5">
+                            <img id="rust-logo" src="./static/language_logos/Rust_logo.png" alt="Rust Logo">
+                        </figure>
+
                     </div>
                 </div>
 
-                <div class="card">
+                <h2 class="title is-size-2">Projects:</h1>
+
+                <div class="card p-5">
                     <div class="card-image">
                         <figure class="image is-16by9">
                             <iframe
@@ -215,18 +228,19 @@
                     </div>
                     <div class="card-content">
                         <h2 class="title is-size-2">Titan Study Tables</h2>
-                        <p>
-                            Titan Study Tables is a Python Flask application developed
-                            using the Agile methodology and Git.
+                        <p class="is-size-5 has-text-weight-medium">
+                            Titan Study Tables is a Web-Based Application designed to help 
+                            student-athletes and school administrators electronically track and manage 
+                            study hours. Developed using the Agile methodology, Git, and 
+                            object-oriented programming.
                         </p>
                     </div>
                 </div>
-
             </div>
 
             <!--Web Design Content -->
             <div id="web-design" class="container is-hidden">
-                <div class="card">
+                <div class="card p-5">
                     <div class="card-image">
                         <figure class="image is-16by9">
                             <iframe
@@ -239,12 +253,17 @@
                         </figure>
                     </div>
                     <div class="card-content">
-                        <h2 class="title is-size-2">Woodlawn Chapel</h2>
-                        <a class="button" href="https://woodlawnchapel.org/" target="_blank">Visit Site</a>
+                        <a href="https://woodlawnchapel.org/" target="_blank">
+                            <h2 class="title is-size-2">Woodlawn Chapel</h2>
+                        </a>
+                        <p class="is-size-5 has-text-weight-medium">
+                            Woodlawn Chapel is a Church based in Charleston, IL that I designed in colaboration
+                            with <a href="https://cloudcarpenter.com/" target="_blank">Cloud Carpenter</a>. 
+                        </p>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card p-5">
                     <div class="card-image">
                         <figure class="image is-16by9">
                             <iframe
@@ -257,9 +276,14 @@
                         </figure>
                     </div>
                     <div class="card-content">
-                        <h2 class="title is-size-2">Dakar Academy Schools</h2>
-                        <p>Dakar Academy is an international boarding school based in Dakar, Senegal!</p>
-                        <a class="button" href="https://dakar-academy.org/" target="_blank">Visit Site</a>
+                        <a href="https://dakar-academy.org/" target="_blank">
+                            <h2 class="title is-size-2">Dakar Academy Schools</h2>
+                        </a>
+                        <p class="is-size-5 has-text-weight-medium">
+                            Dakar Academy</a> is an international boarding school based in Dakar, Senegal.
+                            In the Summer of 2025 I provided consulting services to Dakar Academy's
+                            Front-End Developer to critique and advise the UI/UX.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -267,38 +291,97 @@
             <!--Broadcasting Content -->
             <div id="broadcasting" class="container is-hidden">
 
-                <div class="card">
-                    I've worked as an National Collegiate Athletic Associtation (NCAA) Broadcaster 
-                    for sports such as Volleyball, Lacrosse, Baseball, and Soccer. Highlights 
-                    of my broadcasting career include the 2025 NCAA DIII Volleyball Tournament, 
-                    College Coference of Illinois and Winsconsin (CCIW) Tournament. 
+                <div class="card p-5">
+                    <p class="is-size-5 has-text-weight-medium">
+                        I've worked as an National Collegiate Athletic Associtation (NCAA) Broadcaster 
+                        for sports such as Volleyball, Lacrosse, Baseball, and Soccer. Highlights 
+                        of my broadcasting career include the 2025 NCAA DIII Volleyball Tournament, 
+                        College Coference of Illinois and Winsconsin (CCIW) Tournament. 
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="card p-5">
                     <div class="card-image">
                     </div>
                     <div>
-                        <h1>2025 NCAA DIII Volleyball National Tournament</h1>
+                        <video>
+                            TO BE IMPLEMENTED.
+                        </video>
+                        <h1 class="title is-size-3 pl-3 mb-3">CASTING CAREER HIGHLIGHTS</h1>
+
+                        <table class="table is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th>Sport</th>
+                                    <th>Event</th>
+                                    <th>Season</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Volleyball</td>
+                                    <td>NCAA Regional Finals</td>
+                                    <td>2025</td>
+                                </tr>
+                                 <tr>
+                                    <td>Swim & Dive</td>
+                                    <td>IWU Halloween Invite</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Volleyball</td>
+                                    <td>CCIW Tournament</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Baseball</td>
+                                    <td>CCIW Tournament</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Softball</td>
+                                    <td>CCIW Softball Tournament</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Volleyball</td>
+                                    <td>CCIW Tournament Finals</td>
+                                    <td>2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-16by9">
-                            <iframe
-                                src="https://www.iwuargus.com/author/hwarfield/"
-                                loading="lazy"
-                                style="border: none; width: 100%; height: 100%; pointer-events: none;"
-                                scrolling="no"
-                                sandbox="allow-scripts allow-same-origin"
-                            ></iframe>
-                        </figure>
-                    </div>
+                <div class="card p-5">
                     <div class="card-content">
-                        <h1>Writing</h1>
-                        <a class="button" href="https://www.iwuargus.com/author/hwarfield/" target=="_blank">
-                            View Articles
-                        </a>
+                        <h1 class="title is-size-3">Journalism Expierence</h1>
+                        <table class="table is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th>Article (Click to View)</th>
+                                    <th>Publication</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.iwuargus.com/celebrating-the-career-of-an-iwu-volleyball-legend/" target=="_blank">Celebrating the career of an IWU volleyball legend</a></td>
+                                    <td>The Argus</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://anthrowcircus.com/life-in-senegal-a-photo-essay" target=="_blank">Life in Senegal: A Photo Essay</a></td>
+                                    <td>Anthrow Circus</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.iwuargus.com/womens-volleyballs-historic-win-streak-ended-by-hope-college/" target=="_blank">Women’s volleyball’s historic win streak ended by Hope College </a></td>
+                                    <td>The Argus</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://www.iwuargus.com/author/hwarfield/" target=="_blank">Other Articles</a></td>
+                                    <td>Misc.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 
@@ -307,12 +390,12 @@
 
             <!--International Expierence Content -->
             <div id="international-experience" class="container is-hidden">
-                <div class="card">
+                <div class="card p-5">
                     <header class="card-header">
-                        <h1 class="title is-size-3">A Short Bio...</h1>
+                        <h1 class="title is-size-3">A SHORT BIO...</h1>
                     </header>
                     <div class="card-content">
-                        <p>
+                        <p class="is-size-5 has-text-weight-medium">
                             As the son of Missionaries I lived in six countries growing up including
                             France, Mauritnia, and Senegal. During my 16+ years overseas I had many 
                             cultural expeiernces that broadened my understadning of th world.
@@ -320,24 +403,67 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card p-5">
                     <header class="card-header">
-                        <h1 class="title is-size-3">Language Skills</h1>
+                        <h1 class="title is-size-3">&#127467;&#127479; FRANCE</h1>
                     </header>
                     <div class="card-content">
-                        French
+                        <p class="is-size-5 has-text-weight-medium">
+                            For a year I called Albertville, France my home. There I was enrolled in the French School System
+                            and learn to speak French. 
+                        </p>
                     </div>
                 </div>
+
+                <div class="card p-5">
+                    <header class="card-header">
+                        <h1 class="title is-size-3">&#x1F1FA;&#x1F1EC; UGANDA</h1>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-5 has-text-weight-medium">
+                                During my three years in Uganda I spent my time volunteering around <a ref="https://gsfuganda.com/" target="_blank">Good Shepards Fold Orphanage</a>,
+                                which served underprivilleged Ugandan kids. I also learned Swahili and Luganda languages while  
+                                living the in the forest regions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-5">
+                    <header class="card-header">
+                        <h1 class="title is-size-3">&#x1F1F8;&#x1F1F3; SENEGAL</h1>
+                    </header>
+                    <div class="card-content">
+                        <p class="is-size-5 has-text-weight-medium">
+                            Dakar, Senegal became my home for Junior High and High School. There I was Ingrained with the culture of 
+                            Senegal learning to make Attaya (traditional West-African tea), competed in soccer with locals, and 
+                            particapted in community outreach programs several villages across the Terenga. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card p-5 ">
+                    <header class="card-header">
+                        <h1 class="title is-size-3">&#x1F1F2;&#x1F1F7; MAURITANIA</h1>
+                    </header>
+                    <div class="card-content">
+                        <p class="is-size-5 has-text-weight-medium">
+                            During my formative years I lived in the slums of Nouakchott the capital of Mauritania.
+                            I lived without runnning water, basic sanitation, or a solid stool to sit on. There I saw
+                            poverty in its truest form.
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
         <!--Contact Form-->
-        <div id="contact-form" class="card is-centered my-5">
-            <div class="container">
-                <div class="media-content mb-5">
-                    <p class="title is-2">Contact Me</p>
-                </div>
+        <!-- <div id="contact-form" class="card is-centered my-5 p-2">
+            <div class="card-content">
+                <h1 class="title is-2">Contact Me</h1>
                 <form>
                     <label for="name" class="title is-size-5">Name:</label>
                     <input name="name" class="input mb-5" placeholder="Dwight Schrute" required></input>
@@ -352,14 +478,21 @@
                         <button class="button is-primary" type="submit">Send Message</button>
                         <button class="button is-danger ml-3" type="reset">Clear Form</button>
                     </div>
-
                 </form>
             </div>
-        </div>
+        </div> -->
 
-        <footer class="footer has-text-centered">
-            <p><strong class="title is-size-4 mb-5">Email:</strong>hwarfiel@iwu.edu</p>
-            <p><strong class="title is-size-4 mt-5">Phone:</strong>217-722-9846</p>
+        <footer class="footer mt-5">
+            <h1 class="title is-2 has-text-centered">Contact Me</h1>
+            <div class="has-text-centered">
+                <p class="is-size-4">
+                    <a href="tel:2177229846"><span class="icon is-large"><i class="fa-solid fa-phone"></i></span><span>217-722-9846</span></a>
+
+                    <a href="mailto:hwarfiel@iwu.edu" target="_blank"><span class="icon is-large"><i class="fa-solid fa-envelope"></i></span><span>hwarfiel@iwu.edu</span></a>
+
+                    <a href="https://github.com/hwarfiel" target="_blank"><span class="icon is-large"><i class="fa-brands fa-github"></i></span><span>hwarfiel</span></a>
+                </p>
+            </div>
         </footer>
     </div>
 
