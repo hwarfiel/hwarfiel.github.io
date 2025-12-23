@@ -10,6 +10,14 @@ html {
     background: linear-gradient(to bottom right, var(--dark-color) 25%, var(--primary-color), var(--secondary-color)) !important;
 }
 
+body {
+    color: var(--text-color) !important;
+}
+
+.card, .table {
+    background: var(--dark-color) !important;
+}
+
 #loader {
     position: fixed;
     inset: 0;
@@ -48,7 +56,7 @@ nav {
     position: sticky !important;
 }
 
-#logo {
+#logo, #rust-logo {
     filter: brightness(0) invert(1);
 }
 
