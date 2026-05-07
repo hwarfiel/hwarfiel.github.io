@@ -18,45 +18,79 @@ body {
     background: var(--dark-color) !important;
 }
 
+/* ── Loader ── */
 #loader {
     position: fixed;
     inset: 0;
-    background: linear-gradient(to bottom right, var(--dark-color) 25%, var(--primary-color), var(--secondary-color)) !important; /* your dark background */
+    background: linear-gradient(to bottom right, var(--dark-color) 25%, var(--primary-color), var(--secondary-color)) !important;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
+    transition: opacity 0.4s ease;
+}
+
+#loader.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #loader-image {
-    position: fixed;
     filter: brightness(0) invert(1);
-    width: 23%;          /* control size here */
+    width: 40%;
+    max-width: 220px;
     height: auto;
     animation: spin 1.2s linear infinite;
     transform-origin: 50% 50%;
 }
 
-/* Rotation animation */
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* ── Navbar ── */
+nav.navbar {
+    background: transparent !important;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(6px);
+}
+
+.navbar-menu {
+    background: var(--dark-color) !important;
+}
+
+/* On desktop, centre the links */
+@media (min-width: 1024px) {
+    .navbar-menu {
+        background: transparent !important;
     }
 }
 
-nav {
-    padding-left: 8vw;
-    padding-right: 8vw;
-    padding-top: 3vh;
-    min-height: 15vh !important;
+.navbar-burger span {
+    background-color: var(--text-color) !important;
+}
+
+.navbar-burger:hover {
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+.navbar-item,
+.navbar-item:hover {
     color: var(--text-color) !important;
-    position: sticky !important;
+    background: transparent !important;
 }
 
-#logo, #rust-logo {
+.navbar-item:hover {
+    text-decoration: underline;
+}
+
+#nav-logo img,
+#logo img,
+#rust-logo {
     filter: brightness(0) invert(1);
 }
 
@@ -64,22 +98,45 @@ span {
     color: var(--text-color);
 }
 
-li > a{
+/* ── Tabs ── */
+.tabs ul {
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.tabs li > a {
     border-width: 1.5px !important;
     border-color: var(--text-color) !important;
+    color: var(--text-color) !important;
+    white-space: nowrap;
 }
 
-#fullshot{
-    width: 30%; 
+.tabs li.is-active > a {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* ── Intro card ── */
+#name-card {
+    width: 100%;
+}
+
+/* ── Fullshot (if used) ── */
+#fullshot {
+    width: 100%;
+    max-width: 340px;
     height: auto;
     border-radius: 3%;
-    margin-left: 15%;
-}
-#fullshot-description{
-    display: fixed;
-    max-width: 30vw;
+    margin: 0 auto;
+    display: block;
 }
 
+#fullshot-description {
+    max-width: 100%;
+}
+
+/* ── Carousel ── */
 .carousel {
     background: transparent;
     width: 100%;
@@ -90,6 +147,7 @@ li > a{
     display: flex;
     width: max-content;
     animation: scroll 20s linear infinite;
+    align-items: center;
 }
 
 .carousel-track img {
@@ -97,22 +155,49 @@ li > a{
     flex-shrink: 0;
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+/* Smaller icons on mobile */
+@media (max-width: 768px) {
+    .carousel-track figure {
+        width: 64px !important;
+        height: 64px !important;
+    }
 }
 
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* ── Tables ── */
+.table {
+    color: var(--text-color) !important;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ── Contact Form ── */
 #contact-form {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 0 auto;
     padding: 1.5%;
-    min-width: 100px;
+    max-width: 600px;
+    width: 100%;
 }
- 
+
+/* ── Footer links on mobile ── */
+@media (max-width: 768px) {
+    footer p a {
+        display: block;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* ── Tab content padding ── */
+#tab-content .container {
+    padding-bottom: 2rem;
+}

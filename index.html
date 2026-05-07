@@ -20,55 +20,50 @@
 
     <!--Actual Page-->
     <div class="is-hidden" id="page">
-        <nav class="level" role="navigation">
-           
-            <!--Programming Expierence-->
-            <a class="navbar-item" href="#programming">
-                <span class="icon is-small">
-                    <i class="fa-solid fa-code"></i> 
-                </span> <span>Programming</span> 
-            </a> 
-            
-            <!--Web Desgin-->
-            <a class="navbar-item" href="#web-design"> 
-                <span class="icon is-small"> 
-                    <i class="fa-solid fa-diagram-project"></i> 
-                </span> 
-                <span>Web Design</span> 
-            </a> 
 
-            <a id="logo" href="javascript:window.location.reload();">
-                <figure class="image is-128x128"> 
-                    <img id="logo" src="./static/logo.png" alt="HW Logo"> 
-                </figure>
-            </a> 
+        <!-- Navbar -->
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a id="nav-logo" href="javascript:window.location.reload();" class="navbar-item">
+                    <img src="./static/logo.png" alt="HW Logo" style="max-height:48px; filter: brightness(0) invert(1);">
+                </a>
 
-            <!--Broadcasting Expierence-->
-            <a class="navbar-item" href="#broadcasting"> 
-                <span class="icon is-small"> 
-                    <i class="fa-solid fa-headset"></i> 
-                </span> <span>Broadcasting</span> 
-            </a> 
-          
+                <!-- Hamburger toggle -->
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-            <!--International Expiernce-->
-            <a class="navbar-item" href="#international-expiernce"> 
-                <span class="icon is-small"> 
-                    <i class="fa-solid fa-earth-europe"></i> 
-                </span> 
-                <span>International Experience</span> 
-            </a>
-
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-start mx-auto">
+                    <a class="navbar-item nav-tab-link" data-target="programming">
+                        <span class="icon is-small"><i class="fa-solid fa-code"></i></span>
+                        <span>Programming</span>
+                    </a>
+                    <a class="navbar-item nav-tab-link" data-target="web-design">
+                        <span class="icon is-small"><i class="fa-solid fa-diagram-project"></i></span>
+                        <span>Web Design</span>
+                    </a>
+                    <a class="navbar-item nav-tab-link" data-target="broadcasting">
+                        <span class="icon is-small"><i class="fa-solid fa-headset"></i></span>
+                        <span>Broadcasting</span>
+                    </a>
+                    <a class="navbar-item nav-tab-link" data-target="international-experience">
+                        <span class="icon is-small"><i class="fa-solid fa-earth-europe"></i></span>
+                        <span>International Experience</span>
+                    </a>
+                </div>
+            </div>
         </nav>
 
         <!-- Intro -->
-        <div class="is-flex my-5">
-
+        <div class="is-flex my-5 px-4">
             <div class="card p-5" id="name-card">
                 <div class="card-content">
-
                     <div class="media">
-                        <p class="title is-1">Hayden Warfield</p>
+                        <p class="title is-2-mobile is-1">Hayden Warfield</p>
                     </div>
                     <p class="is-size-5 has-text-weight-medium">
                         Hi I'm Hayden, a Full-Stack Developer, NCAA Broadcaster,
@@ -78,135 +73,108 @@
                     </p>
                 </div>
             </div>
-
         </div>
 
-        <div class="tabs is-large is-toggle is-toggle-rounded is-centered">
+        <!-- Tabs -->
+        <div class="tabs is-medium is-toggle is-toggle-rounded is-centered is-flex-wrap-wrap px-2">
             <ul>
                 <li class="is-active" data-target="programming">
                     <a>
-                        <span class="icon is-small">
-                            <i class="fa-solid fa-code"></i>
-                        </span>
+                        <span class="icon is-small"><i class="fa-solid fa-code"></i></span>
                         <span>Programming</span>
                     </a>
                 </li>
-
                 <li data-target="web-design">
                     <a>
-                        <span class="icon is-small">
-                            <i class="fa-solid fa-diagram-project"></i>
-                        </span>
+                        <span class="icon is-small"><i class="fa-solid fa-diagram-project"></i></span>
                         <span>Web Design</span>
                     </a>
                 </li>
-
                 <li data-target="broadcasting">
                     <a>
-                        <span class="icon is-small">
-                            <i class="fa-solid fa-headset"></i>
-                        </span>
+                        <span class="icon is-small"><i class="fa-solid fa-headset"></i></span>
                         <span>Broadcasting & Journalism</span>
                     </a>
                 </li>
-
                 <li data-target="international-experience">
                     <a>
-                        <span class="icon is-small">
-                            <i class="fa-solid fa-earth-europe"></i>
-                        </span>
+                        <span class="icon is-small"><i class="fa-solid fa-earth-europe"></i></span>
                         <span>International Experience</span>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div id="tab-content">
+        <div id="tab-content" class="px-3">
+
             <!--Programming Content -->
             <div id="programming" class="container">
 
-                <h2 class="title is-size-2">Programming Skills:</h1>
+                <h2 class="title is-size-2">Programming Skills:</h2>
                 <div class="carousel my-5">
                     <div class="carousel-track">
 
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/CPlusPlus.svg" alt="C++ logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/css.svg" alt="CSS Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/HTML5.png" alt="HTML Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/Java.svg" alt="Java Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
-                            <img src="./static/language_logos/JS.svg" alt="JavsScript Logo">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
+                            <img src="./static/language_logos/JS.svg" alt="JavaScript Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/OCaml.svg" alt="Ocaml Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/Python.svg" alt="Python Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/Racket.svg" alt="Racket Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img id="rust-logo" src="./static/language_logos/Rust_logo.png" alt="Rust Logo">
                         </figure>
 
-
-                        <!-- duplicate images -->
-                        <figure class="image is-128x128 mx-5">
+                        <!-- duplicates for seamless scroll -->
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/CPlusPlus.svg" alt="C++ logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/css.svg" alt="CSS Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/HTML5.png" alt="HTML Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/Java.svg" alt="Java Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
-                            <img src="./static/language_logos/JS.svg" alt="JavsScript Logo">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
+                            <img src="./static/language_logos/JS.svg" alt="JavaScript Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/OCaml.svg" alt="Ocaml Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/Python.svg" alt="Python Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
                             <img src="./static/language_logos/Racket.svg" alt="Racket Logo">
                         </figure>
-
-                        <figure class="image is-128x128 mx-5">
-                            <img id="rust-logo" src="./static/language_logos/Rust_logo.png" alt="Rust Logo">
+                        <figure class="image is-64x64 is-128x128-tablet mx-3">
+                            <img id="rust-logo-dup" src="./static/language_logos/Rust_logo.png" alt="Rust Logo">
                         </figure>
 
                     </div>
                 </div>
 
-                <h2 class="title is-size-2">Projects:</h1>
+                <h2 class="title is-size-2">Projects:</h2>
 
                 <div class="card p-5">
                     <div class="card-image">
@@ -317,11 +285,11 @@
                     </p>
                 </div>
                 
-                <div class="card p-5 ">
+                <div class="card p-5">
                     <div>
                         <h1 class="title is-size-3 pl-3 mb-3">CASTING CAREER HIGHLIGHTS</h1>
-                        <div class="card-content">
-                            <table class="table is-hoverable">
+                        <div class="card-content table-container">
+                            <table class="table is-hoverable is-fullwidth">
                                 <thead>
                                     <tr>
                                         <th>Sport</th>
@@ -369,48 +337,48 @@
                 <div class="card p-5">
                     <div class="card-content">
                         <h1 class="title is-size-3">Journalism Expierence</h1>
-                        <table class="table is-hoverable">
-                            <thead>
-                                <tr>
-                                    <th>Article (Click to View)</th>
-                                    <th>Publication</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="https://www.iwuargus.com/celebrating-the-career-of-an-iwu-volleyball-legend/" target=="_blank">Celebrating the career of an IWU volleyball legend</a></td>
-                                    <td>The Argus</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://anthrowcircus.com/life-in-senegal-a-photo-essay" target=="_blank">Life in Senegal: A Photo Essay</a></td>
-                                    <td>Anthrow Circus</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://www.iwuargus.com/womens-volleyballs-historic-win-streak-ended-by-hope-college/" target=="_blank">Women’s volleyball’s historic win streak ended by Hope College </a></td>
-                                    <td>The Argus</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="https://www.iwuargus.com/author/hwarfield/" target=="_blank">Other Articles</a></td>
-                                    <td>Misc.</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-container">
+                            <table class="table is-hoverable is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>Article (Click to View)</th>
+                                        <th>Publication</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="https://www.iwuargus.com/celebrating-the-career-of-an-iwu-volleyball-legend/" target="_blank">Celebrating the career of an IWU volleyball legend</a></td>
+                                        <td>The Argus</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://anthrowcircus.com/life-in-senegal-a-photo-essay" target="_blank">Life in Senegal: A Photo Essay</a></td>
+                                        <td>Anthrow Circus</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.iwuargus.com/womens-volleyballs-historic-win-streak-ended-by-hope-college/" target="_blank">Women's volleyball's historic win streak ended by Hope College</a></td>
+                                        <td>The Argus</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.iwuargus.com/author/hwarfield/" target="_blank">Other Articles</a></td>
+                                        <td>Misc.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                
 
             </div>
 
-            <!--International Expierence Content -->
+            <!--International Experience Content -->
             <div id="international-experience" class="container is-hidden">
                 <div class="card p-5">
-                   
                     <h1 class="title is-size-3">A SHORT BIO &#x1f1fa;&#x1f1f8; &#127467;&#127479; &#x1F1FA;&#x1F1EC; &#x1F1F8;&#x1F1F3; &#x1F1F2;&#x1F1F7;</h1>
                     <p class="is-size-5 has-text-weight-medium">
                         Growing up as the son of missionaries, 
                         I spent 16+ years living across six countries — including France, Uganda, Senegal, and Mauritania — 
                         before ever settling in one place for long. I learned French in the classrooms of Albertville, 
-                        picked up Swahili and Luganda while volunteering at <a ref="https://gsfuganda.com/" target="_blank">Good Shepards Fold Orphanage</a> 
+                        picked up Swahili and Luganda while volunteering at <a href="https://gsfuganda.com/" target="_blank">Good Shepards Fold Orphanage</a> 
                         in Uganda's forest regions, 
                         and called the slums of Nouakchott home during some of my most formative years, where I saw 
                         poverty in its rawest form. In Dakar, I grew up immersed in Senegalese culture — making Attaya, 
@@ -418,43 +386,27 @@
                         Those years abroad didn't just broaden my worldview; they shaped how I think, how I connect with people, 
                         and ultimately how I approach building things that matter.
                     </p>
-                    
                 </div>
             </div>
 
         </div>
 
-        <!--Contact Form-->
-        <!-- <div id="contact-form" class="card is-centered my-5 p-2">
-            <div class="card-content">
-                <h1 class="title is-2">Contact Me</h1>
-                <form>
-                    <label for="name" class="title is-size-5">Name:</label>
-                    <input name="name" class="input mb-5" placeholder="Dwight Schrute" required></input>
-
-                    <label for="email" class="title is-size-5">Email:</label>
-                    <input name="email" class="input mb-5" placeholder="dwightschrute@dundermifflin.com" type="email" required></input>
-
-                    <label for="message" class="title is-size-5">Message:</label>
-                    <textarea name="message" class="textarea mb-5" placeholder="Hello world" required></textarea>
-
-                    <div class="is-flex">
-                        <button class="button is-primary" type="submit">Send Message</button>
-                        <button class="button is-danger ml-3" type="reset">Clear Form</button>
-                    </div>
-                </form>
-            </div>
-        </div> -->
-
         <footer class="footer mt-5">
             <h1 class="title is-2 has-text-centered">Contact Me</h1>
             <div class="has-text-centered">
-                <p class="is-size-4">
-                    <a href="tel:2177229846"><span class="icon is-large"><i class="fa-solid fa-phone"></i></span><span>217-722-9846</span></a>
-
-                    <a href="mailto:hwarfiel@iwu.edu" target="_blank"><span class="icon is-large"><i class="fa-solid fa-envelope"></i></span><span>hwarfiel@iwu.edu</span></a>
-
-                    <a href="https://github.com/hwarfiel" target="_blank"><span class="icon is-large"><i class="fa-brands fa-github"></i></span><span>hwarfiel</span></a>
+                <p class="is-size-5-mobile is-size-4">
+                    <a href="tel:2177229846" class="is-block-mobile mb-3">
+                        <span class="icon is-large"><i class="fa-solid fa-phone"></i></span>
+                        <span>217-722-9846</span>
+                    </a>
+                    <a href="mailto:hwarfiel@iwu.edu" target="_blank" class="is-block-mobile mb-3">
+                        <span class="icon is-large"><i class="fa-solid fa-envelope"></i></span>
+                        <span>hwarfiel@iwu.edu</span>
+                    </a>
+                    <a href="https://github.com/hwarfiel" target="_blank" class="is-block-mobile mb-3">
+                        <span class="icon is-large"><i class="fa-brands fa-github"></i></span>
+                        <span>hwarfiel</span>
+                    </a>
                 </p>
             </div>
         </footer>
@@ -463,8 +415,5 @@
     <!--Import Scripts-->
     <script src="./scripts/script.js"></script>
 </body>
-
-
-
 
 </html>
